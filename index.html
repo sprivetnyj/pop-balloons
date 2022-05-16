@@ -7,16 +7,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap&_v=20220507145137" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.min.css?_v=20220507145137">
-	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js?_v=20220507145137"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap&_v=20220516133658" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.min.css?_v=20220516133658">
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js?_v=20220516133658"></script>
 	<title>Лопай шарики! 🌈</title>
 </head>
 
 <body>
+	<div class="preloader hidden"></div>
 	<div class="container">
 		<div class="wrapper">
 			<canvas></canvas>
+			<div class="spinner"></div>
 			<div class="top">
 				<div class="score">0</div>
 			</div>
@@ -25,12 +27,20 @@
 				<div class="result__record">Новый рекорд!</div>
 			</div>
 			<button class="play visible"></button>
-			<div class="highscore visible">
-				<div class="highscore__text">0</div>
-			</div>
 			<div class="bottom">
 				<button class="home icon"></button>
 				<button class="restart icon"></button>
+			</div>
+			<div class="bottom bottom--end">
+				<button class="home icon"></button>
+				<button class="restart icon"></button>
+			</div>
+			<div class="bottom bottom--start visible">
+				<button class="post icon"></button>
+				<button class="invite icon"></button>
+			</div>
+			<div class="highscore visible">
+				<div class="highscore__text">0</div>
 			</div>
 			<div class="buttons">
 				<button class="button"></button>
@@ -41,7 +51,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="./js/index.min.js?_v=20220507145137"></script>
+	<script src="./js/index.min.js?_v=20220516133658"></script>
 </body>
 
 </html>
